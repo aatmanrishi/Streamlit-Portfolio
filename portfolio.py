@@ -2,16 +2,7 @@
 import streamlit as st ;
 import requests
 from PIL import Image 
-from streamlit_lottie import st_lottie
-# Page Config
-def load_lottie(url):
-    r = requests.get(url);
-    if r.status_code !=200:
-        return None ;
-    return r.json();
 
-lottie_coder =load_lottie( 'https://lottie.host/68b21172-b1be-47d1-8808-69283846972c/NJSsxCWlc3.json');
-lottie_coder_ = load_lottie('https://lottie.host/55432167-6812-4bd8-b559-888c9b9f8d36/9EWCQG4Ny0.json');
 avatar_img =  Image.open('3d avatar.gif');
 image = Image.open('orchestrate.gif')
 diwali_img = Image.open('DiwaliSales.jpg')
@@ -104,7 +95,7 @@ if selected == 'About':
                          Xth Percentage = 82%
         ''')
         with col6:
-            st_lottie(lottie_coder_);
+             st.image("https://giphy.com/embed/2hw8p8TpG8CgvuQOCT")
         col7,col8 = st.columns(2)
         with col5:
             st.subheader(''' 
