@@ -2,7 +2,7 @@
 import streamlit as st ;
 import requests
 from PIL import Image 
-from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie 
 # Page Config
 def load_lottie(url):
     r = requests.get(url);
