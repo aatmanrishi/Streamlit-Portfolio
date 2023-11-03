@@ -95,7 +95,7 @@ if selected == 'About':
                          Xth Percentage = 82%
         ''')
         with col6:
-             st.image("https://giphy.com/embed/2hw8p8TpG8CgvuQOCT")
+            st.image("https://media.giphy.com/media/2hw8p8TpG8CgvuQOCT/giphy.gif")
         col7,col8 = st.columns(2)
         with col5:
             st.subheader(''' 
