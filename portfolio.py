@@ -19,6 +19,10 @@ googlePlaystore=Image.open('google.jfif')
 adultsIncome = Image.open('adults_Income.jfif');
 ecommerce = Image.open('ecommerce.jpeg')
 youtube_ = Image.open('youtbe.jfif')
+hr_report = Image.open('Hr analytics Project_page-0001.jpg');
+gloabl_store_report = Image.open('Global_SuperStore_Sales_Dashboard_page-0001.jpg')
+madhav_sales_dashboard = Image.open('MadhavEcommerceSalesDashboard_page-0001.jpg');
+super_store = Image.open('Super store analytics project_page-0001.jpg');
 
 st.set_page_config(layout="wide");
 st.subheader('Hello everyone, my name is Rishabh Shukla and I am very happy to meet you all! 😊');
@@ -95,7 +99,7 @@ if selected == 'About':
                          Xth Percentage = 82%
         ''')
         with col6:
-             st.image("https://giphy.com/embed/2hw8p8TpG8CgvuQOCT")
+            st.image("https://media.giphy.com/media/2hw8p8TpG8CgvuQOCT/giphy.gif")
         col7,col8 = st.columns(2)
         with col5:
             st.subheader(''' 
@@ -196,31 +200,67 @@ if selected == 'Projects':
             st.markdown('[Github-link](https://github.com/aatmanrishi/Pandas-Exercises-.git)');
     with st.container():
         st.write('##')
-        col21,col22 = st.columns((1,2))
-        with col21:
+        col23,col24 = st.columns((1,2))
+        with col23:
             st.image(ecommerce_image);
-        with col22:
+        with col24:
             st.subheader('Ecommerce Purchase Analysis');
             st.write("In this project we have worked on a real-world dataset available on Kaggle.Here we have find out about highest and lowest price of customer,there average price,also find out there ip adresses .We get to know that how many people have done purchase above 50,000. Along with this we get to know which are top 5 most popular email providers.")
             st.markdown('[Github-link](https://github.com/aatmanrishi/Pandas-Exercises-.git)');
     with st.container():
         st.write('##')
-        col23,col24 = st.columns((1,2))
-        with col21:
+        col25,col26 = st.columns((1,2))
+        with col25:
             st.image(adultsIncome);
-        with col22:
+        with col26:
             st.subheader('Adults Income Analysis');
             st.write("In this project we have worked on Adults income analysis that we got form Kaggle.Here we have perform tasks like data cleaning and data manipulation . Along with Univariate Analysis and Bivariate Analysis.We also foud out that who has better chance to get salary greater than 50k Male or Female.Along with this we also found out that which working class has highest Salary. How many Persons haiving Bachelors and Masters Degree.")
             st.markdown('[Github-link](https://github.com/aatmanrishi/Pandas-Exercises-.git)');
     with st.container():
         st.write('##')
-        col24,col25 = st.columns((1,2))
-        with col24:
+        col27,col28 = st.columns((1,2))
+        with col27:
             st.image(youtube_);
-        with col25:
+        with col28:
             st.subheader('Youtube Data Anlaytics Project');
             st.write("Here we have data analysis on Youtube dataset that we got from Kaggle. Here we perform data cleaning , dropped rows with null values .Found out about the youtube channels with highest number of subscribers alon with this about youtube video having highest number of views along with this average on a regular youtube video . We also find out about the youtube video with maximum number of uploads .")
             st.markdown('[Github-link](https://github.com/aatmanrishi/Pandas-Exercises-.git)');
+    with st.container():
+        st.write('##')
+        col29,col30 = st.columns((1,2))
+        with col29:
+            st.image(super_store);
+        with col30:
+            st.subheader('Super Store Analytics Power Bi Project');
+            st.write("In this Power BI project we have imported data, cleaned data and processed data, designed dashboard, learned use of advance charts and maps, filters and slicers,export dashboard as pdf, project insights and learnings .")
+            st.markdown('[Github-link](https://github.com/aatmanrishi/Super-Store-Sales-Analytics-Dashboard.git)');
+    with st.container():
+        st.write('##')
+        col31,col32 = st.columns((1,2))
+        with col31:
+            st.image(gloabl_store_report);
+        with col32:
+            st.subheader('Globa Super Store Analytics Power Bi Project');
+            st.write("Her we have extracted dataset related to Global Super Sotes and performa data cleaning over it along with this we used awesome power bi charts through whihc we have generated usefull insights .")
+            st.markdown('[Github-link](https://github.com/aatmanrishi/Global_store_powerbi_report.git)');
+    with st.container():
+        st.write('##')
+        col33,col34 = st.columns((1,2))
+        with col33:
+            st.image(hr_report);
+        with col34:
+            st.subheader('HR Analytics Power Bi Project');
+            st.write("Her we have build a Hr Analytics Sales dashboard whose data we got from kaggle . We performed data cleaning , extraction and finall created awesome visual report which provide usefull insgihts .")
+            st.markdown('[Github-link](https://github.com/aatmanrishi/HrAnalyticsDashboard.git)');
+    with st.container():
+        st.write('##')
+        col35,col36 = st.columns((1,2))
+        with col35:
+            st.image(madhav_sales_dashboard);
+        with col36:
+            st.subheader('Madhav Ecommerce Sales Power Bi Project');
+            st.write("Here we have imported Madhave Ecommerce Sales dataset from Kaggle and peroformed data cleaning , removed duplicates and created a data report that provide usefull insights .")
+            st.markdown('[Github-link](https://github.com/aatmanrishi/MadhavEcommerceSalesDashboard.git)');
 
 if selected == 'Contact':
     st.header('Get in touch with me')
