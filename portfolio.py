@@ -1,6 +1,5 @@
 
 import streamlit as st ;
-from streamlit_option_menu import option_menu
 import requests
 from PIL import Image 
 from streamlit_lottie import st_lottie
@@ -35,15 +34,36 @@ st.subheader('Hello everyone, my name is Rishabh Shukla and I am very happy to m
 st.title("Aspiring Business Analyst Eager to Drive Data-Driven Success");
 st.write('''Hello👋, I'm Rishabh Shukla, a dedicated and results-driven Business Analyst. With a strong analytical mindset and a passion for problem-solving, I turn complex data into actionable insights. I can analyze business processes, identify opportunities for improvement, and delivering data-driven recommendations to drive growth and efficiency. I thrive on collaborating with cross-functional teams to achieve strategic goals. Let's work together to unlock the potential of your business.''');
 
-st.write('----');
-
 with st.container():
-    selected = option_menu(
-        menu_title = None,
-        options = ['About','Projects','Contact'],
-        menu_icon = ['file-earmark-person','Project','Contact us'],
-        orientation = 'horizontal'
-        )
+    col1, col2, col3 = st.columns(3)
+
+    # Define the buttons in the columns
+    selected = 'About'
+    if col1.button('About', key='about_button'):
+        selected = 'About'
+    if col2.button("Projects", key='projects_button'):
+        selected = "Projects"
+    if col3.button("Contact", key='contact_button'):
+        selected = "Contact"
+
+    # Apply background color to the buttons
+    st.markdown(
+        """
+        <style>
+        .streamlit-button {
+            background-color: #007ACC;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+        }
+        .streamlit-button:hover {
+            background-color: #005B9C;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 
 if selected == 'About':
         # Create two vertical columns
